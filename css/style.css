@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Bauhaus Light";
+  src: url(../ASSETS/font/BauhausStd-Light.otf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* ***** Root Var ***** */
+
+:root {
+  --bg-color: #e9c9c8;
+  --secondary-color: #7bd3d3;
+}
+
+/* ***** Resets ***** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 16px;
+
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Montserrat", sans-serif !important;
+}
+
+body::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(231, 229, 226, 0); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgba(255, 166, 0, 0); /* creates padding around scroll thumb */
+}
+
+.home__image {
+  background-image: url(../ASSETS/img/cupcakes_cenital.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right;
+  position: relative;
+}
+
+.home__image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background: rgb(233, 201, 200);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(233, 201, 200, 1) 10%,
+    rgba(250, 247, 247, 0) 46%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(233, 201, 200, 1) 10%,
+    rgba(250, 247, 247, 0) 46%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(233, 201, 200, 1) 10%,
+    rgba(250, 247, 247, 0) 46%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9c9c8",endColorstr="#faf7f7",GradientType=1);
+}
+
+.hero-blur::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /* backdrop-filter: brightness(.75); */
+}
+.text-BauhausLight {
+  font-family: "Bauhaus Light";
+  font-weight: 100;
+}
+
+.text-Montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.link-color:hover {
+  transition: all 0.3s ease-in-out;
+  color: var(--secondary-color) !important;
+}
+
+.text-shadow {
+  text-shadow: 8px 5px 5px #c6c1c1;
+}
+/* .hero-text__bg {
+    background: #191818;
+    background: linear-gradient(120deg, var(--bg-color) 10%, var(--secondary-color)15%, #508fa3 55%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+} */
+
+/* .glass-bg {
+    backdrop-filter: blur(15px) brightness(.85);
+}
+
+.border-color {
+    border-bottom: 1px solid var(--secondary-color) !important;
+} */
