@@ -6,15 +6,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
-/* 
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif; */
 
 /* ***** Root Var ***** */
 
 :root {
   --bg-color: #e9c9c8;
   --secondary-color: #7bd3d3;
+
+  --Bauhaus-font: "Bauhaus Light";
+  --Montserrat-font: "Montserrat", sans-serif;
+  --Roboto-font: "Roboto", sans-serif;
 }
 
 /* ***** Resets ***** */
@@ -31,7 +32,7 @@ html {
   font-size: 16px;
 
   scroll-behavior: smooth;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: var(--Montserrat-font) !important;
 }
 
 ol,
@@ -42,7 +43,6 @@ li {
 
 a {
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 
@@ -52,7 +52,7 @@ img {
 
 body {
   background-color: var(--bg-color);
-  font-family: "Montserrat", sans-serif !important;
+  font-family: var(--Montserrat-font) !important;
 }
 
 body::-webkit-scrollbar {
@@ -74,6 +74,34 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid rgba(255, 166, 0, 0); /* creates padding around scroll thumb */
 }
 
+i {
+  font-weight: bold;
+  background-image: linear-gradient(
+    120deg,
+    rgb(213, 51, 165) 12%,
+    var(--secondary-color) 40%,
+    #4f81d3
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+footer a:hover i {
+  transition: all 0.3s ease-in-out;
+
+  background-image: linear-gradient(
+    140deg,
+    rgb(213, 51, 165) 36%,
+    var(--secondary-color),
+    #4f81d3
+  );
+}
+
+footer a:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
 .home__image {
   background-image: url(../ASSETS/img/cupcakes_cenital.jpg);
   width: 100%;
@@ -121,12 +149,12 @@ body::-webkit-scrollbar-thumb {
   /* backdrop-filter: brightness(.75); */
 }
 .text-BauhausLight {
-  font-family: "Bauhaus Light";
+  font-family: var(--Bauhaus-font);
   font-weight: 100;
 }
 
 .text-Montserrat {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--Montserrat-font);
 }
 
 .link-color:hover {
@@ -137,13 +165,18 @@ body::-webkit-scrollbar-thumb {
 .text-shadow {
   text-shadow: 8px 5px 5px #c6c1c1;
 }
-/* .hero-text__bg {
-    background: #191818;
-    background: linear-gradient(120deg, var(--bg-color) 10%, var(--secondary-color)15%, #508fa3 55%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    
-} */
+.gradient-text {
+  background: #191818;
+  background: linear-gradient(
+    120deg,
+    rgb(213, 51, 165),
+    var(--secondary-color) 40%,
+    #4f81d3 65%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 
 /* .glass-bg {
     backdrop-filter: blur(15px) brightness(.85);
