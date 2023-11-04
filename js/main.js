@@ -12,8 +12,8 @@ window.addEventListener("scroll", () => {
       link.classList.add("text-white");
     });
     svg.setAttribute("fill", "white");
-    logo.style.width = '95px';
-    logo.style.height = '70px';
+    logo.style.width = '87px';
+    logo.style.height = '60px';
   } else {
     navbr.classList.remove("scrolled_bg");
     links.forEach((link) => {

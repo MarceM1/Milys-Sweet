@@ -241,15 +241,13 @@ footer a:hover {
   transform: scale(1);
 }
 
-
 .drop-shadow {
-  filter: drop-shadow(2rem 2.5rem 2rem #47464667) drop-shadow(1rem 3rem 1rem var(--bg-color));
+  filter: drop-shadow(2rem 2.5rem 2rem #47464667)
+    drop-shadow(1rem 3rem 1rem var(--bg-color));
 }
 
-
-
 .blur-bg {
-  backdrop-filter: blur(3px) brightness(.90);
+  backdrop-filter: blur(5px) brightness(0.75);
 }
 
 .desssert-table_img {
@@ -261,106 +259,71 @@ footer a:hover {
 }
 
 .box_shadow {
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 .versalita {
   font-variant: small-caps;
 }
-/* #about-us {
-  background: rgb(123, 211, 211);
-  background: -moz-linear-gradient(
-    13deg,
-    rgba(123, 211, 211, 1) 10%,
-    rgba(233, 201, 200, 1) 59%
-  );
-  background: -webkit-linear-gradient(
-    13deg,
-    rgba(123, 211, 211, 1) 10%,
-    rgba(233, 201, 200, 1) 59%
-  );
-  background: linear-gradient(
-    13deg,
-    rgba(123, 211, 211, 1) 10%,
-    rgba(233, 201, 200, 1) 59%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7bd3d3",endColorstr="#e9c9c8",GradientType=1);
+
+.varietyCakes_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 25vh 30vh 25vh;
+  grid-template-areas:
+    "0 a b"
+    "c d b"
+    "c e e";
+  gap: .5rem;
 }
 
-#cakes {
-  background: rgb(233, 201, 200);
-  background: -moz-linear-gradient(
-    321deg,
-    rgba(233, 201, 200, 1) 16%,
-    rgba(123, 211, 211, 1) 68%
-  );
-  background: -webkit-linear-gradient(
-    321deg,
-    rgba(233, 201, 200, 1) 16%,
-    rgba(123, 211, 211, 1) 68%
-  );
-  background: linear-gradient(
-    321deg,
-    rgba(233, 201, 200, 1) 16%,
-    rgba(123, 211, 211, 1) 68%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9c9c8",endColorstr="#7bd3d3",GradientType=1);
+.a {
+  grid-area: a;
+  background-image: url(../ASSETS/img/Cupcakes_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: .5rem;
+}
+.b {
+  grid-area: b;
+  background-image: url(../ASSETS/img/miniBrownie.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: .5rem;
+}
+.c {
+  grid-area: c;
+  background-image: url(../ASSETS/img/AlfajoresMaizena_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: .5rem;
+}
+.d {
+  grid-area: d;
+  background-image: url(../ASSETS/img/CarrotCake.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: .5rem;
+}
+.e {
+  grid-area: e;
+  background-image: url(../ASSETS/img/CheescakeCup_horizontal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: .5rem;
 }
 
-#cupcakes {
-  background: rgb(233,201,200);
-background: -moz-linear-gradient(318deg, rgba(233,201,200,1) 29%, rgba(123,211,211,1) 74%);
-background: -webkit-linear-gradient(318deg, rgba(233,201,200,1) 29%, rgba(123,211,211,1) 74%);
-background: linear-gradient(318deg, rgba(233,201,200,1) 29%, rgba(123,211,211,1) 74%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9c9c8",endColorstr="#7bd3d3",GradientType=1);
+.fullScreen {
+  width: 100vw !important;
 }
 
-#sweet-table {
-  background: rgb(233, 201, 200);
-  background: -moz-linear-gradient(
-    321deg,
-    rgba(233, 201, 200, 1) 16%,
-    rgba(123, 211, 211, 1) 68%
-  );
-  background: -webkit-linear-gradient(
-    321deg,
-    rgba(233, 201, 200, 1) 16%,
-    rgba(123, 211, 211, 1) 68%
-  );
-  background: linear-gradient(
-    321deg,
-    rgba(233, 201, 200, 1) 16%,
-    rgba(123, 211, 211, 1) 68%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9c9c8",endColorstr="#7bd3d3",GradientType=1);
-}
 
-#contact-us {
-  background: rgb(123, 211, 211);
-  background: -moz-linear-gradient(
-    13deg,
-    rgba(123, 211, 211, 1) 10%,
-    rgba(233, 201, 200, 1) 59%
-  );
-  background: -webkit-linear-gradient(
-    13deg,
-    rgba(123, 211, 211, 1) 10%,
-    rgba(233, 201, 200, 1) 59%
-  );
-  background: linear-gradient(
-    13deg,
-    rgba(123, 211, 211, 1) 10%,
-    rgba(233, 201, 200, 1) 59%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7bd3d3",endColorstr="#e9c9c8",GradientType=1);
-} */
-/* .glass-bg {
-    backdrop-filter: blur(15px) brightness(.85);
-}
-
-.border-color {
-    border-bottom: 1px solid var(--secondary-color) !important;
-} */
 
 /* MediaQueries */
 
