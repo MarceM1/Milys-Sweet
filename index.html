@@ -21,20 +21,22 @@
   <body>
     <header>
       <!-- Start Navbar -->
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand fs-2 text-BauhausLight" href="#">
+      <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+        <div class="container-fluid px-3 z-3">
+          <a
+            class="navbar-brand fs-2 text-BauhausLight textWhite_mobile"
+            id="scrollTextColor"
+            href="#"
+          >
             <img
               src="./ASSETS/img/logo.png"
               alt="Logo"
-              width="150"
-              height="110"
-              class="d-inline-block align-text-center"
+              class="d-inline-block align-text-center logo"
             />
             Milys Sweet
           </a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler textWhite_mobile"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -42,82 +44,105 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon textWhite_mobile"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline textWhite_mobile"
+            >
               <li class="nav-item">
                 <a
-                  class="nav-link fw-medium link-color"
+                  class="nav-link fw-medium link-color textWhite_mobile"
                   aria-current="page"
                   href="#home"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-medium link-color" href="#about-us"
+                <a
+                  class="nav-link fw-medium link-color textWhite_mobile"
+                  href="#about-us"
                   >About Us</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-medium link-color" href="#cakes">Cakes</a>
+                <a
+                  class="nav-link fw-medium link-color textWhite_mobile"
+                  href="#cakes"
+                  >Cakes</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-medium link-color" href="#cupcakes"
+                <a
+                  class="nav-link fw-medium link-color textWhite_mobile"
+                  href="#cupcakes"
                   >Cupcakes</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link fw-medium link-color" href="#sweet-table"
-                  >Sweet Table</a
+                <a
+                  class="nav-link fw-medium link-color textWhite_mobile"
+                  href="#sweet-table"
+                  >Dessert Table</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-medium link-color" href="#contact-us"
+                <a
+                  class="nav-link fw-medium link-color textWhite_mobile"
+                  href="#contact-us"
                   >Contact Us</a
                 >
               </li>
             </ul>
             <div class="dropdown">
               <a
-                class="btn dropdown-toggle dropdown-toggle-split fw-bold d-flex align-items-center justify-content-center gap-2"
+                class="btn dropdown-toggle dropdown-toggle-split fw-bold d-flex align-items-center justify-content-start justify-content-md-center gap-2 p-0 p-md-1 textWhite_mobile"
+                id="scrollTextColor"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Language
-                <svg
-                  id="Capa_1"
-                  enable-background="new 0 0 512 512"
-                  height="32"
-                  viewBox="0 0 512 512"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#555"
-                >
-                  <g id="XMLID_235_">
-                    <g id="XMLID_164_">
-                      <path
-                        id="XMLID_196_"
-                        d="m463.955 106.685c5.056-6.935 8.05-15.465 8.05-24.685 0-23.159-18.841-42-42-42-9.22 0-17.75 2.994-24.685 8.05-43.669-31.456-95.116-48.05-149.32-48.05-53.173 0-104.162 16.152-147.457 46.709-4.512 3.185-5.588 9.424-2.403 13.937 3.185 4.512 9.425 5.588 13.937 2.403 28.92-20.412 61.573-33.843 96.018-39.694-4.009 5.094-8.037 11.225-12.012 18.609-12.132 22.539-22.144 53.578-29.123 90.158-18.36 1.32-33.485 14.484-37.751 31.878h-98.602c5.812-13.719 12.944-26.926 21.362-39.453 3.08-4.584 1.86-10.797-2.724-13.877-4.584-3.081-10.797-1.861-13.877 2.723-28.372 42.224-43.368 91.537-43.368 142.607 0 54.185 16.595 105.645 48.047 149.319-5.054 6.934-8.047 15.463-8.047 24.681 0 23.159 18.841 42 42 42 9.219 0 17.748-2.993 24.682-8.048 43.672 31.454 95.128 48.048 149.318 48.048 68.38 0 132.667-26.629 181.02-74.981 48.351-48.351 74.98-112.639 74.98-181.019 0-54.198-16.592-105.645-48.045-149.315zm16.799 221.315h-106.637c-3.425-13.965-13.849-25.201-27.328-29.775.789-13.892 1.211-28.047 1.211-42.225 0-24.726-1.198-48.92-3.507-71.999h136.385c7.347 22.995 11.122 47.184 11.122 71.999 0 25.1-3.954 49.291-11.246 72zm-224.754 164c-16.755 0-34.884-24.379-48.496-65.214-7.629-22.889-13.531-49.627-17.514-78.785h102.551c3.202 13.054 12.516 23.73 24.729 28.803-15.213 79.485-41.445 115.196-61.27 115.196zm-174-104c-6.687 0-13.01 1.579-18.627 4.371-9.944-13.999-18.239-28.853-24.823-44.371h131.276c4.156 31.467 10.463 60.387 18.704 85.11 7.924 23.774 17.152 42.371 27.431 55.531-34.639-5.875-67.324-19.407-96.332-40.013 2.792-5.618 4.371-11.941 4.371-18.628 0-23.159-18.841-42-42-42zm102-132c0-13.645.4-27.26 1.15-40.622 16.475-2.841 29.691-15.303 33.633-31.378h105.614c2.371 22.992 3.603 47.199 3.603 72 0 13.6-.398 27.174-1.144 40.5-16.792 2.609-30.318 15.203-34.315 31.5h-104.939c-2.369-22.991-3.602-47.198-3.602-72zm149.329 104c-12.131 0-22-9.869-22-22s9.869-22 22-22 22 9.869 22 22-9.869 22-22 22zm-9.859-281.11c-7.925-23.775-17.153-42.373-27.433-55.533 34.645 5.875 67.33 19.405 96.339 40.015-2.792 5.618-4.371 11.941-4.371 18.628 0 23.159 18.841 42 42 42 6.687 0 13.009-1.579 18.627-4.37 9.945 13.998 18.237 28.854 24.82 44.371h-131.278c-4.156-31.468-10.464-60.388-18.704-85.111zm128.535 3.11c0 12.131-9.869 22-22 22s-22-9.869-22-22 9.869-22 22-22 22 9.869 22 22zm-196.005-62c16.755 0 34.884 24.379 48.496 65.214 7.629 22.889 13.531 49.628 17.514 78.786h-103.226c-3.147-12.831-12.2-23.362-24.105-28.536 15.2-79.668 41.457-115.464 61.321-115.464zm-78.004 132.001c12.131 0 22 9.869 22 22s-9.869 22-22 22-22-9.869-22-22 9.869-22 22-22zm-40.787 32c3.481 14.193 14.189 25.573 27.989 29.999-.78 13.818-1.198 27.896-1.198 42 0 24.727 1.198 48.921 3.507 72h-136.38c-7.349-22.999-11.127-47.189-11.127-72 0-24.684 3.805-48.918 11.187-71.999zm-77.209 245.999c0-12.131 9.869-22 22-22s22 9.869 22 22-9.869 22-22 22-22-9.869-22-22zm235.937 58.604c3.974-5.055 7.967-11.128 11.908-18.432 12.169-22.557 22.213-53.668 29.207-90.346 18.051-1.594 32.853-14.649 37.065-31.826h99.209c-30.915 72.752-97.337 126.901-177.389 140.604z"
-                      />
-                      <path
-                        id="XMLID_1702_"
-                        d="m80.06 94.06c2.641 0 5.21-1.06 7.08-2.93 1.86-1.86 2.92-4.44 2.92-7.07s-1.06-5.2-2.92-7.07c-1.87-1.86-4.439-2.93-7.08-2.93-2.63 0-5.21 1.07-7.069 2.93-1.86 1.87-2.931 4.44-2.931 7.07s1.07 5.21 2.931 7.07c1.859 1.87 4.439 2.93 7.069 2.93z"
-                      />
+                <div class="d-none d-md-block">
+                  <svg
+                    id="Capa_1"
+                    enable-background="new 0 0 512 512"
+                    height="32"
+                    viewBox="0 0 512 512"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#555"
+                  >
+                    <g id="XMLID_235_">
+                      <g id="XMLID_164_">
+                        <path
+                          id="XMLID_196_"
+                          d="m463.955 106.685c5.056-6.935 8.05-15.465 8.05-24.685 0-23.159-18.841-42-42-42-9.22 0-17.75 2.994-24.685 8.05-43.669-31.456-95.116-48.05-149.32-48.05-53.173 0-104.162 16.152-147.457 46.709-4.512 3.185-5.588 9.424-2.403 13.937 3.185 4.512 9.425 5.588 13.937 2.403 28.92-20.412 61.573-33.843 96.018-39.694-4.009 5.094-8.037 11.225-12.012 18.609-12.132 22.539-22.144 53.578-29.123 90.158-18.36 1.32-33.485 14.484-37.751 31.878h-98.602c5.812-13.719 12.944-26.926 21.362-39.453 3.08-4.584 1.86-10.797-2.724-13.877-4.584-3.081-10.797-1.861-13.877 2.723-28.372 42.224-43.368 91.537-43.368 142.607 0 54.185 16.595 105.645 48.047 149.319-5.054 6.934-8.047 15.463-8.047 24.681 0 23.159 18.841 42 42 42 9.219 0 17.748-2.993 24.682-8.048 43.672 31.454 95.128 48.048 149.318 48.048 68.38 0 132.667-26.629 181.02-74.981 48.351-48.351 74.98-112.639 74.98-181.019 0-54.198-16.592-105.645-48.045-149.315zm16.799 221.315h-106.637c-3.425-13.965-13.849-25.201-27.328-29.775.789-13.892 1.211-28.047 1.211-42.225 0-24.726-1.198-48.92-3.507-71.999h136.385c7.347 22.995 11.122 47.184 11.122 71.999 0 25.1-3.954 49.291-11.246 72zm-224.754 164c-16.755 0-34.884-24.379-48.496-65.214-7.629-22.889-13.531-49.627-17.514-78.785h102.551c3.202 13.054 12.516 23.73 24.729 28.803-15.213 79.485-41.445 115.196-61.27 115.196zm-174-104c-6.687 0-13.01 1.579-18.627 4.371-9.944-13.999-18.239-28.853-24.823-44.371h131.276c4.156 31.467 10.463 60.387 18.704 85.11 7.924 23.774 17.152 42.371 27.431 55.531-34.639-5.875-67.324-19.407-96.332-40.013 2.792-5.618 4.371-11.941 4.371-18.628 0-23.159-18.841-42-42-42zm102-132c0-13.645.4-27.26 1.15-40.622 16.475-2.841 29.691-15.303 33.633-31.378h105.614c2.371 22.992 3.603 47.199 3.603 72 0 13.6-.398 27.174-1.144 40.5-16.792 2.609-30.318 15.203-34.315 31.5h-104.939c-2.369-22.991-3.602-47.198-3.602-72zm149.329 104c-12.131 0-22-9.869-22-22s9.869-22 22-22 22 9.869 22 22-9.869 22-22 22zm-9.859-281.11c-7.925-23.775-17.153-42.373-27.433-55.533 34.645 5.875 67.33 19.405 96.339 40.015-2.792 5.618-4.371 11.941-4.371 18.628 0 23.159 18.841 42 42 42 6.687 0 13.009-1.579 18.627-4.37 9.945 13.998 18.237 28.854 24.82 44.371h-131.278c-4.156-31.468-10.464-60.388-18.704-85.111zm128.535 3.11c0 12.131-9.869 22-22 22s-22-9.869-22-22 9.869-22 22-22 22 9.869 22 22zm-196.005-62c16.755 0 34.884 24.379 48.496 65.214 7.629 22.889 13.531 49.628 17.514 78.786h-103.226c-3.147-12.831-12.2-23.362-24.105-28.536 15.2-79.668 41.457-115.464 61.321-115.464zm-78.004 132.001c12.131 0 22 9.869 22 22s-9.869 22-22 22-22-9.869-22-22 9.869-22 22-22zm-40.787 32c3.481 14.193 14.189 25.573 27.989 29.999-.78 13.818-1.198 27.896-1.198 42 0 24.727 1.198 48.921 3.507 72h-136.38c-7.349-22.999-11.127-47.189-11.127-72 0-24.684 3.805-48.918 11.187-71.999zm-77.209 245.999c0-12.131 9.869-22 22-22s22 9.869 22 22-9.869 22-22 22-22-9.869-22-22zm235.937 58.604c3.974-5.055 7.967-11.128 11.908-18.432 12.169-22.557 22.213-53.668 29.207-90.346 18.051-1.594 32.853-14.649 37.065-31.826h99.209c-30.915 72.752-97.337 126.901-177.389 140.604z"
+                        />
+                        <path
+                          id="XMLID_1702_"
+                          d="m80.06 94.06c2.641 0 5.21-1.06 7.08-2.93 1.86-1.86 2.92-4.44 2.92-7.07s-1.06-5.2-2.92-7.07c-1.87-1.86-4.439-2.93-7.08-2.93-2.63 0-5.21 1.07-7.069 2.93-1.86 1.87-2.931 4.44-2.931 7.07s1.07 5.21 2.931 7.07c1.859 1.87 4.439 2.93 7.069 2.93z"
+                        />
+                      </g>
                     </g>
-                  </g>
-                </svg>
+                  </svg>
+                </div>
               </a>
 
               <ul class="dropdown-menu bg-transparent">
                 <li>
-                  <a class="dropdown-item disable" href="index.html">English</a>
+                  <a
+                    class="dropdown-item textWhite_mobile disabled"
+                    href="index.html"
+                    >English</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="spanish.html">Español</a>
+                  <a class="dropdown-item textWhite_mobile" href="spanish.html"
+                    >Español</a
+                  >
                 </li>
               </ul>
             </div>
@@ -129,21 +154,25 @@
       <!-- ******************** -->
 
       <!-- Start Home Section -->
-      <section class="home__image">
+      <section class="home__image" id="home">
         <div
-          class="vh-100 w-100 position-absolute d-flex flex-column justify-content-center pb-5 hero-blur"
+          class="vh-100 w-100 position-absolute d-flex flex-column justify-content-center pb-1 pb-md-5 hero-blur"
         >
-          <div class="w-75 px-5 glass-bg z-3">
-            <h2 class="display-5 fw-bold z-3 m-0 mb-3 gradient-text">
+          <div class="w-75 px-5 glass-bg z-3 flex-wrap mt-5 fullWidth">
+            <h2
+              class="display-5 fw-bold z-3 m-0 mb-3 gradient-text mobile_HeroTitle_Size"
+            >
               Where Sweet Dreams Come to Life.
             </h2>
             <p
-              class="fs-4 fw-bold text-white z-3 text-shadow m-0 border-1 border-white border-bottom border-top py-2"
+              class="fs-4 fw-bold text-white z-3 text-shadow m-0 border-1 border-white border-bottom border-top py-2 mobile_HeroSubTitle_Size"
             >
               Sweet Treats Catering
             </p>
           </div>
-          <div class="w-75 px-5 z-3 mt-3 d-flex align-items-center gap-5">
+          <div
+            class="w-75 px-5 z-3 mt-3 d-flex align-items-center justify-content-end justify-content-md-start fullWidth gap-1 gap-md-5 flex-wrap"
+          >
             <a
               href="mailto:#"
               target="_blank"
@@ -174,11 +203,208 @@
 
     <!-- ******************** -->
     <main>
-      <section class="vh-100" id="about-us">
-        <h2>About Us section</h2>
+      <section class="my-5 py-5 container" id="about-us">
+        <article class="pt-5 mb-5 m-0 p-0">
+          <h2 class="display-4 border-2 border-bottom border-white text-white">
+            About Us
+          </h2>
+          <h3 class="m-0 p-0 py-2">Celebrating the Sweetness of Life</h3>
+          <p class="m-0 p-0">
+            At Milys Sweet, our story is an ode to a very special loved one. We
+            embarked on our journey in 2019 with a passion for homemade cakes
+            that quickly turned into a dedication.
+          </p>
+        </article>
+        <div class="row m-0 p-0 mb-5">
+          <article class="col-12 col-md-5 p-0 m-0">
+            <h3
+              class="border-2 border-bottom border-white text-white versalita"
+            >
+              Our Identity
+            </h3>
+            <h5 class="m-0 p-0 py-2">Latin American Flavors</h5>
+            <p class="m-0 p-0">
+              At Milys Sweet, we take pride in showcasing the vibrant and
+              authentic flavors of Latin American ingredients. It's our way of
+              paying tribute to our rich Hispanic heritage. Our products are a
+              culinary journey through the diverse and delicious tastes of Latin
+              America.
+            </p>
+          </article>
+          <div class="col-md-2"></div>
+          <article class="col-12 col-md-5 p-0 m-0 box_shadow">
+            <img
+              src="./ASSETS/img/TresLechesCake.jpg"
+              alt="Three Milk Cake"
+              class="img-fluid rounded-2"
+            />
+          </article>
+        </div>
+        <div class="row m-0 p-0">
+          <article
+            class="col-12 col-md-5 p-0 m-0 box_shadow order-3 order-md-1"
+          >
+            <img
+              src="./ASSETS/img/RedVelvetCake.jpg"
+              alt="Three Milk Cake"
+              class="img-fluid rounded-2"
+            />
+          </article>
+          <div class="col-md-2 order-2"></div>
+          <article class="col-12 col-md-5 p-0 m-0 order-1 order-md-3">
+            <h3
+              class="border-2 border-bottom border-white text-white versalita"
+            >
+              Exploring Flavors
+            </h3>
+            <h5 class="m-0 p-0 py-2">A World of Options</h5>
+            <p class="m-0 p-0">
+              We offer a wide variety of flavors to satisfy your palate. From
+              three milk cakes to buttery vanilla pound cakes, marbled
+              chocovanilla, Red Velvet, carrot and spices, chocolate bread,
+              orange bread, and pineapple.
+            </p>
+          </article>
+        </div>
+        <article class="mt-5 m-0 p-0 d-flex flex-column align-items-end">
+          <h3
+            class="m-0 p-0 border-2 border-bottom border-white text-white pb-2 w-75 versalita"
+          >
+            Irresistible Fillings
+          </h3>
+          <h5 class="m-0 p-0 w-75 py-3">The Sweet Touch</h5>
+          <p class="m-0 p-0 w-75">
+            Our cakes wouldn't be the same without our fillings, which include
+            <strong>"La Lechera"</strong> sweet milk, homemade caramel, salted
+            caramel, cream with fresh strawberries, peach, fresh fruit
+            pineapple, mocha with caramel, nuts, pastry cream, Nutella, passion
+            fruit mousse, white chocolate brigadeiro, semisweet chocolate
+            brigadeiro, cream cheese, and pistachio cream..
+          </p>
+        </article>
+        <article class="mt-5 m-0 p-0 d-flex flex-column">
+          <h3
+            class="m-0 p-0 w-100 text-white border-2 border-bottom border-white pb-2 versalita"
+          >
+            More Than Cakes
+          </h3>
+          <div class="desssert-table_img mt-4 rounded-2 box_shadow">
+            <h4 class="m-0 p-0 pt-3 text-white fw-bold border-1 border-bottom border-white mx-2 versalita">Creating Sweet Moments</h4>
+            <p class="m-0  p-2 w-100">
+              Our commitment goes beyond baking. We design beautiful dessert
+              tables for all kinds of events, from weddings and quinceañeras to
+              special parties.
+            </p>
+          </div>
+        </article>
+        <article>
+          <h3>A World of Delights</h3>
+          <h4>Our Variety</h4>
+          <p>
+            Our variety of products includes mini brownies, flans for kids, cake
+            pops, cupcakes, personalized cookies, mini pastries, alfajores with
+            sweet milk, Nutella alfajores, walnut alfajores, and cheesecake cups
+            with flavors like passion fruit, red fruits (blackberry, raspberry,
+            and blueberries), and lemon.
+          </p>
+        </article>
+
+        <article
+          class="d-flex align-items-center justify-content-center mt-5 py-3 blur-bg"
+        >
+          <h5 class="px-5 fw-bold gradient-text m-0 p-0">
+            At Milys Sweet, we combine passion and quality to create sweet and
+            memorable experiences. We hope you choose us to sweeten your special
+            moments.
+          </h5>
+        </article>
       </section>
-      <section class="vh-100" id="cakes">
-        <h2>Cakes Section</h2>
+      <section class="container" id="cakes">
+        <h2 class="text-white display-3 border-2 border-white border-bottom">
+          Our Delicious <strong>Cakes</strong>
+        </h2>
+        <h3 class="pt-2">Custom Creations and Irresistible Classics</h3>
+        <p class="fs-5">
+          At Milys Sweet, our cake section is the heart of what we do. We offer
+          a wide variety of options to satisfy all your cravings.
+        </p>
+        <article class="row d-flex mt-5 pt-5">
+          <div class="col-12 col-md-4">
+            <h3 class="text-white fw-bold border-2 border-white border-bottom">
+              Custom Cakes
+            </h3>
+            <h4 class="p-0 m-0 pt-2">Your Wish is Our Command</h4>
+            <p class="p-0 m-0 lh-sm">
+              Do you have a special cake idea in mind? We're here to make it a
+              reality! At Milys Sweet, we create custom cakes designed to
+              perfectly fit the occasion you're celebrating. Whether it's a
+              birthday, baptism, wedding, or any special event, we'll work with
+              you to bring your vision to life.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="./ASSETS/img/CustomCake_3.png"
+              alt="cake"
+              class="w-100 img-fluid drop-shadow"
+            />
+          </div>
+          <div class="col-12 col-md-4 d-flex flex-column justify-content-end">
+            <h4
+              class="text-white fw-bold p-0 m-0 pt-2 border-2 border-white border-bottom mb-3 text-end"
+            >
+              Creating Magic in Sugar and Flour
+            </h4>
+            <p class="p-0 m-0 lh-sm text-end">
+              At Milys Sweet, each custom cake is a masterpiece of sugar and
+              flour. Our talented team of bakers combines their expertise and
+              creativity to bring your vision to life in the most delicious way
+              possible. From the design and flavors to the tiniest details of
+              the decoration, each cake is a testament to our commitment to
+              quality and customer satisfaction. Allow us to turn your bakery
+              dreams into an unforgettable taste.
+            </p>
+          </div>
+        </article>
+        <article class="mt-5 pt-5">
+          <div class="d-flex flex-column align-items-end">
+            <h3
+              class="text-white fw-bold border-2 border-white border-bottom mb-3 col-10"
+            >
+              Quality in Every Bite
+            </h3>
+            <p class="p-0 m-0 lh-sm col-10">
+              At Milys Sweet, quality is our priority. We use fresh and
+              authentic ingredients in every cake we bake. From the smooth and
+              delicious fillings to the meticulous decoration, every detail is
+              crafted with love and attention.
+            </p>
+
+            <div class="col-10 d-flex align-items-center">
+              <div class="d-flex flex-column gap-5">
+                <h4 class="p-0 m-0 pt-3 text-white">Place Your Order Today.</h4>
+                <p class="p-0 m-0 lh-sm">
+                  Whether you're looking for a custom cake for a special
+                  occasion or simply want to enjoy an irresistible classic,
+                  Milys Sweet has the solution to satisfy your cravings. Place
+                  your order today and let us sweeten your sweetest moments!
+                </p>
+                <a href="#contact-us" class="w-100"
+                  ><button
+                    class="btn btn-outline-light rounded-pill fw-bold w-100"
+                  >
+                    Order Here!
+                  </button></a
+                >
+              </div>
+              <img
+                src="./ASSETS/img/CustomCake_4.png"
+                class="w-25 drop-shadow"
+                alt=""
+              />
+            </div>
+          </div>
+        </article>
       </section>
       <section class="vh-100" id="cupcakes">
         <h2>Cupcakes Table Section</h2>
@@ -193,11 +419,11 @@
     <!-- Start Footer Section -->
     <footer class="row pt-5 bg-body-tertiary">
       <article
-        class="col-12 col-md-4 px-5 d-flex flex-column align-items-start justify-content-start"
+        class="col-12 col-md-4 px-5 d-flex flex-column align-items-center align-items-md-start justify-content-start mb-5"
       >
         <h3 class="text-BauhausLight fw-bold text-shadow">Milys Sweet</h3>
         <p
-          class="fw-bold z-3 tm-0 mb-3 gradient-text border-2 border-top border-bottom border-dark py2"
+          class="fw-bold z-3 tm-0 mb-3 gradient-text border-2 border-top border-bottom border-dark py-2"
         >
           Cakes, cupcakes and sweet table
         </p>
@@ -216,43 +442,41 @@
           ></a>
         </div>
       </article>
-      <article class="col-12 col-md-4">
-        <div class="row">
-          <div
-            class="col-6 d-flex flex-column align-items-start justify-content-start gap-3"
+
+      <div
+        class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center justify-content-md-start gap-3"
+      >
+        <h5 class="m-0 p-0">Charlotte, North Carolina</h5>
+        <h5>
+          <a
+            href="mailto:#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-dark fs-6 m-0 p-0"
+            >info@milyssweet.com</a
           >
-            <h5 class="m-0 p-0">Charlotte, North Carolina</h5>
-            <h5>
-              <a
-                href="mailto:#"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-dark fs-6 m-0 p-0"
-                >info@milyssweet.com</a
-              >
-            </h5>
-            <h5>
-              <a
-                href="http://#"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-dark fs-6 m-0 p-0"
-                >(704) 877-5109</a
-              >
-            </h5>
-          </div>
-          <div class="col-6">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417296.448812654!2d-81.16949029799707!3d35.203267903980496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fc4fc381a81%3A0x884650e6bf43d164!2sCharlotte%2C%20Carolina%20del%20Norte%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1698028385358!5m2!1ses!2sar"
-              class="rounded-2 img-fluid"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </article>
+        </h5>
+        <h5>
+          <a
+            href="http://#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-dark fs-6 m-0 p-0"
+            >(704) 877-5109</a
+          >
+        </h5>
+      </div>
+      <div class="col-12 col-md-4 d-flex justify-content-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417296.448812654!2d-81.16949029799707!3d35.203267903980496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fc4fc381a81%3A0x884650e6bf43d164!2sCharlotte%2C%20Carolina%20del%20Norte%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1698028385358!5m2!1ses!2sar"
+          class="rounded-2 img-fluid"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
       <article class="col-12 col-md-4"></article>
       <small
         class="col-12 d-flex align-items-center justify-content-center flex-wrap mt-3"
@@ -260,6 +484,7 @@
           href="https://marcelomelogno-webdevelopment.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
+          class="link-copy"
           ><strong>Marcelo Melogno</strong></a
         >
         | Desing and Web Development. Octuber 2023
