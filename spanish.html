@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,113 +10,731 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- ScrollReveal  -->
+    <script src="./js/scrollreveal.js"></script>
     <link rel="icon" href="favicon.png" />
-    <title>Milys Sweet | Cakes & Cupcakes</title>
+    <title>Milys Sweet | Pasteles & Cupcakes</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand fs-2 text-BauhausLight" href="#">
-          <img
-            src="./ASSETS/img/logo.png"
-            alt="Logo"
-            width="150"
-            height="110"
-            class="d-inline-block align-text-center"
-          />
-          Milys Sweet
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
-            <li class="nav-item">
-              <a
-                class="nav-link fw-medium link-color"
-                aria-current="page"
-                href="#home"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-medium link-color" href="#about-us"
-                >About Us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-medium link-color" href="#cakes">Cakes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-medium link-color" href="#cupcakes"
-                >Cupcakes</a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link fw-medium link-color" href="#sweet-table"
-                >Sweet Table</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-medium link-color" href="#contact-us"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-          <div class="dropdown">
-            <a
-              class="btn dropdown-toggle fw-bold d-flex align-items-center justify-content-center gap-2"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+    <header>
+      <!-- Start Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top revealExtraSlow" id="nav">
+        <div class="container-fluid px-3 z-3">
+          <a
+            class="navbar-brand fs-2 text-BauhausLight textWhite_mobile notranslate"
+            id="scrollTextColor"
+            href="#"
+          >
+            <img
+              src="./ASSETS/img/logo.png"
+              alt="Logo"
+              class="d-inline-block align-text-center logo"
+            />
+            Milys Sweet
+          </a>
+          <button
+            class="navbar-toggler textWhite_mobile"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon textWhite_mobile"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline textWhite_mobile"
             >
-              Language
-              <svg
-                id="Capa_1"
-                enable-background="new 0 0 512 512"
-                height="32"
-                viewBox="0 0 512 512"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="#555"
-              >
-                <g id="XMLID_235_">
-                  <g id="XMLID_164_">
-                    <path
-                      id="XMLID_196_"
-                      d="m463.955 106.685c5.056-6.935 8.05-15.465 8.05-24.685 0-23.159-18.841-42-42-42-9.22 0-17.75 2.994-24.685 8.05-43.669-31.456-95.116-48.05-149.32-48.05-53.173 0-104.162 16.152-147.457 46.709-4.512 3.185-5.588 9.424-2.403 13.937 3.185 4.512 9.425 5.588 13.937 2.403 28.92-20.412 61.573-33.843 96.018-39.694-4.009 5.094-8.037 11.225-12.012 18.609-12.132 22.539-22.144 53.578-29.123 90.158-18.36 1.32-33.485 14.484-37.751 31.878h-98.602c5.812-13.719 12.944-26.926 21.362-39.453 3.08-4.584 1.86-10.797-2.724-13.877-4.584-3.081-10.797-1.861-13.877 2.723-28.372 42.224-43.368 91.537-43.368 142.607 0 54.185 16.595 105.645 48.047 149.319-5.054 6.934-8.047 15.463-8.047 24.681 0 23.159 18.841 42 42 42 9.219 0 17.748-2.993 24.682-8.048 43.672 31.454 95.128 48.048 149.318 48.048 68.38 0 132.667-26.629 181.02-74.981 48.351-48.351 74.98-112.639 74.98-181.019 0-54.198-16.592-105.645-48.045-149.315zm16.799 221.315h-106.637c-3.425-13.965-13.849-25.201-27.328-29.775.789-13.892 1.211-28.047 1.211-42.225 0-24.726-1.198-48.92-3.507-71.999h136.385c7.347 22.995 11.122 47.184 11.122 71.999 0 25.1-3.954 49.291-11.246 72zm-224.754 164c-16.755 0-34.884-24.379-48.496-65.214-7.629-22.889-13.531-49.627-17.514-78.785h102.551c3.202 13.054 12.516 23.73 24.729 28.803-15.213 79.485-41.445 115.196-61.27 115.196zm-174-104c-6.687 0-13.01 1.579-18.627 4.371-9.944-13.999-18.239-28.853-24.823-44.371h131.276c4.156 31.467 10.463 60.387 18.704 85.11 7.924 23.774 17.152 42.371 27.431 55.531-34.639-5.875-67.324-19.407-96.332-40.013 2.792-5.618 4.371-11.941 4.371-18.628 0-23.159-18.841-42-42-42zm102-132c0-13.645.4-27.26 1.15-40.622 16.475-2.841 29.691-15.303 33.633-31.378h105.614c2.371 22.992 3.603 47.199 3.603 72 0 13.6-.398 27.174-1.144 40.5-16.792 2.609-30.318 15.203-34.315 31.5h-104.939c-2.369-22.991-3.602-47.198-3.602-72zm149.329 104c-12.131 0-22-9.869-22-22s9.869-22 22-22 22 9.869 22 22-9.869 22-22 22zm-9.859-281.11c-7.925-23.775-17.153-42.373-27.433-55.533 34.645 5.875 67.33 19.405 96.339 40.015-2.792 5.618-4.371 11.941-4.371 18.628 0 23.159 18.841 42 42 42 6.687 0 13.009-1.579 18.627-4.37 9.945 13.998 18.237 28.854 24.82 44.371h-131.278c-4.156-31.468-10.464-60.388-18.704-85.111zm128.535 3.11c0 12.131-9.869 22-22 22s-22-9.869-22-22 9.869-22 22-22 22 9.869 22 22zm-196.005-62c16.755 0 34.884 24.379 48.496 65.214 7.629 22.889 13.531 49.628 17.514 78.786h-103.226c-3.147-12.831-12.2-23.362-24.105-28.536 15.2-79.668 41.457-115.464 61.321-115.464zm-78.004 132.001c12.131 0 22 9.869 22 22s-9.869 22-22 22-22-9.869-22-22 9.869-22 22-22zm-40.787 32c3.481 14.193 14.189 25.573 27.989 29.999-.78 13.818-1.198 27.896-1.198 42 0 24.727 1.198 48.921 3.507 72h-136.38c-7.349-22.999-11.127-47.189-11.127-72 0-24.684 3.805-48.918 11.187-71.999zm-77.209 245.999c0-12.131 9.869-22 22-22s22 9.869 22 22-9.869 22-22 22-22-9.869-22-22zm235.937 58.604c3.974-5.055 7.967-11.128 11.908-18.432 12.169-22.557 22.213-53.668 29.207-90.346 18.051-1.594 32.853-14.649 37.065-31.826h99.209c-30.915 72.752-97.337 126.901-177.389 140.604z"
-                    />
-                    <path
-                      id="XMLID_1702_"
-                      d="m80.06 94.06c2.641 0 5.21-1.06 7.08-2.93 1.86-1.86 2.92-4.44 2.92-7.07s-1.06-5.2-2.92-7.07c-1.87-1.86-4.439-2.93-7.08-2.93-2.63 0-5.21 1.07-7.069 2.93-1.86 1.87-2.931 4.44-2.931 7.07s1.07 5.21 2.931 7.07c1.859 1.87 4.439 2.93 7.069 2.93z"
-                    />
-                  </g>
-                </g>
-              </svg>
-            </a>
-
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item disable" href="index.html">English</a>
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-medium link-color textWhite_mobile"
+                  aria-current="page"
+                  href="#home"
+                  >Inicio</a
+                >
               </li>
-              <li><a class="dropdown-item" href="spanish.html">Español</a></li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-medium link-color textWhite_mobile"
+                  href="#about-us"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-medium link-color textWhite_mobile"
+                  href="#cakes"
+                  >Pasteles</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-medium link-color textWhite_mobile"
+                  href="#cupcakes"
+                  >Cupcakes</a
+                >
+              </li>
+
+              <!-- <li class="nav-item">
+                <a
+                  class="nav-link fw-medium link-color textWhite_mobile"
+                  href="#sweet-table"
+                  >Dessert Table</a
+                >
+              </li> -->
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-medium link-color textWhite_mobile"
+                  href="#contact-us"
+                  >Contáctenos</a
+                >
+              </li>
             </ul>
+            <div class="dropdown">
+              <a
+                class="btn dropdown-toggle dropdown-toggle-split fw-bold d-flex align-items-center justify-content-start justify-content-md-center gap-2 p-0 p-md-1 textWhite_mobile"
+                id="scrollTextColor"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Idioma
+                <div class="d-none d-md-block">
+                  <svg
+                    id="Capa_1"
+                    enable-background="new 0 0 512 512"
+                    height="32"
+                    viewBox="0 0 512 512"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#555"
+                  >
+                    <g id="XMLID_235_">
+                      <g id="XMLID_164_">
+                        <path
+                          id="XMLID_196_"
+                          d="m463.955 106.685c5.056-6.935 8.05-15.465 8.05-24.685 0-23.159-18.841-42-42-42-9.22 0-17.75 2.994-24.685 8.05-43.669-31.456-95.116-48.05-149.32-48.05-53.173 0-104.162 16.152-147.457 46.709-4.512 3.185-5.588 9.424-2.403 13.937 3.185 4.512 9.425 5.588 13.937 2.403 28.92-20.412 61.573-33.843 96.018-39.694-4.009 5.094-8.037 11.225-12.012 18.609-12.132 22.539-22.144 53.578-29.123 90.158-18.36 1.32-33.485 14.484-37.751 31.878h-98.602c5.812-13.719 12.944-26.926 21.362-39.453 3.08-4.584 1.86-10.797-2.724-13.877-4.584-3.081-10.797-1.861-13.877 2.723-28.372 42.224-43.368 91.537-43.368 142.607 0 54.185 16.595 105.645 48.047 149.319-5.054 6.934-8.047 15.463-8.047 24.681 0 23.159 18.841 42 42 42 9.219 0 17.748-2.993 24.682-8.048 43.672 31.454 95.128 48.048 149.318 48.048 68.38 0 132.667-26.629 181.02-74.981 48.351-48.351 74.98-112.639 74.98-181.019 0-54.198-16.592-105.645-48.045-149.315zm16.799 221.315h-106.637c-3.425-13.965-13.849-25.201-27.328-29.775.789-13.892 1.211-28.047 1.211-42.225 0-24.726-1.198-48.92-3.507-71.999h136.385c7.347 22.995 11.122 47.184 11.122 71.999 0 25.1-3.954 49.291-11.246 72zm-224.754 164c-16.755 0-34.884-24.379-48.496-65.214-7.629-22.889-13.531-49.627-17.514-78.785h102.551c3.202 13.054 12.516 23.73 24.729 28.803-15.213 79.485-41.445 115.196-61.27 115.196zm-174-104c-6.687 0-13.01 1.579-18.627 4.371-9.944-13.999-18.239-28.853-24.823-44.371h131.276c4.156 31.467 10.463 60.387 18.704 85.11 7.924 23.774 17.152 42.371 27.431 55.531-34.639-5.875-67.324-19.407-96.332-40.013 2.792-5.618 4.371-11.941 4.371-18.628 0-23.159-18.841-42-42-42zm102-132c0-13.645.4-27.26 1.15-40.622 16.475-2.841 29.691-15.303 33.633-31.378h105.614c2.371 22.992 3.603 47.199 3.603 72 0 13.6-.398 27.174-1.144 40.5-16.792 2.609-30.318 15.203-34.315 31.5h-104.939c-2.369-22.991-3.602-47.198-3.602-72zm149.329 104c-12.131 0-22-9.869-22-22s9.869-22 22-22 22 9.869 22 22-9.869 22-22 22zm-9.859-281.11c-7.925-23.775-17.153-42.373-27.433-55.533 34.645 5.875 67.33 19.405 96.339 40.015-2.792 5.618-4.371 11.941-4.371 18.628 0 23.159 18.841 42 42 42 6.687 0 13.009-1.579 18.627-4.37 9.945 13.998 18.237 28.854 24.82 44.371h-131.278c-4.156-31.468-10.464-60.388-18.704-85.111zm128.535 3.11c0 12.131-9.869 22-22 22s-22-9.869-22-22 9.869-22 22-22 22 9.869 22 22zm-196.005-62c16.755 0 34.884 24.379 48.496 65.214 7.629 22.889 13.531 49.628 17.514 78.786h-103.226c-3.147-12.831-12.2-23.362-24.105-28.536 15.2-79.668 41.457-115.464 61.321-115.464zm-78.004 132.001c12.131 0 22 9.869 22 22s-9.869 22-22 22-22-9.869-22-22 9.869-22 22-22zm-40.787 32c3.481 14.193 14.189 25.573 27.989 29.999-.78 13.818-1.198 27.896-1.198 42 0 24.727 1.198 48.921 3.507 72h-136.38c-7.349-22.999-11.127-47.189-11.127-72 0-24.684 3.805-48.918 11.187-71.999zm-77.209 245.999c0-12.131 9.869-22 22-22s22 9.869 22 22-9.869 22-22 22-22-9.869-22-22zm235.937 58.604c3.974-5.055 7.967-11.128 11.908-18.432 12.169-22.557 22.213-53.668 29.207-90.346 18.051-1.594 32.853-14.649 37.065-31.826h99.209c-30.915 72.752-97.337 126.901-177.389 140.604z"
+                        />
+                        <path
+                          id="XMLID_1702_"
+                          d="m80.06 94.06c2.641 0 5.21-1.06 7.08-2.93 1.86-1.86 2.92-4.44 2.92-7.07s-1.06-5.2-2.92-7.07c-1.87-1.86-4.439-2.93-7.08-2.93-2.63 0-5.21 1.07-7.069 2.93-1.86 1.87-2.931 4.44-2.931 7.07s1.07 5.21 2.931 7.07c1.859 1.87 4.439 2.93 7.069 2.93z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </a>
+
+              <ul class="dropdown-menu bg-transparent">
+                <li>
+                  <a
+                    class="dropdown-item textWhite_mobile "
+                    href="index.html"
+                    >English</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item textWhite_mobile disabled" href="spanish.html"
+                    >Español</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- ******************** -->
+
+      <!-- Start Home Section -->
+      <section class="home__image" id="home">
+        <div
+          class="vh-100 w-100 position-absolute d-flex flex-column justify-content-center pb-1 pb-md-5 hero-blur"
+        >
+          <div class="w-75 px-5 glass-bg z-3 flex-wrap mt-5 fullWidth">
+            <h2
+              class="display-5 fw-bold z-3 m-0 mb-3 gradient-text mobile_HeroTitle_Size reveal"
+            >
+              Donde los sueños dulces se vuelve realidad.
+            </h2>
+            <p
+              class="fs-4 fw-bold text-white z-3 text-shadow m-0 border-1 border-white border-bottom border-top py-2 mobile_HeroSubTitle_Size revealExtraSlow"
+            >
+              Catering de Delicias Dulces
+            </p>
+          </div>
+          <div
+            class="w-75 px-5 z-3 mt-3 d-flex align-items-center justify-content-end justify-content-md-start fullWidth gap-1 gap-md-5 flex-wrap revealExtraSlow"
+          >
+            <a
+              href="#footer"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="fs-6 m-0 p-0 d-flex align-items-center gap-2 justify-content-center fw-bold text-white"
+              >Redes sociales <i class="bi bi-person-circle fs-4"></i
+            ></a>
+
+            <a
+              href="mailto:#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="fs-6 m-0 p-0 d-flex align-items-center gap-2 justify-content-center fw-bold text-white"
+              >info@milyssweet.com <i class="bi bi-envelope fs-4"></i
+            ></a>
+            <a
+              href="http://#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="fs-6 m-0 p-0 d-flex align-items-center gap-2 justify-content-center fw-bold text-white"
+              >(704) 877-5109 <i class="bi bi-phone fs-4"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- End Home Section -->
+    </header>
+
+    <!-- ******************** -->
+    <main>
+      <!-- Start About us Section -->
+      <section class="my-5 py-5 container" id="about-us">
+        <article class="pt-5 mb-5 m-0 p-0 toleft">
+          <h2 class="display-4 border-2 border-bottom border-white text-white">
+            Sobre Nosotros
+          </h2>
+          <h3 class="m-0 p-0 py-2 toleft">Celebrando la Dulzura de la Vida</h3>
+          <p class="m-0 p-0 toleft">
+            En Milys Sweet, nuestra historia es un homenaje a un ser querido muy
+            especial. Iniciamos nuestro viaje en 2019 con una pasión por los
+            pasteles caseros que rápidamente se convirtió en una dedicación
+          </p>
+        </article>
+        <div class="row m-0 p-0 mb-5">
+          <article class="col-12 col-md-5 p-0 m-0 toright">
+            <h3
+              class="border-2 border-bottom border-white text-white versalita"
+            >
+              Nuestra Identidad
+            </h3>
+            <h5 class="m-0 p-0 py-2 toup">Latin American Flavors</h5>
+            <p class="m-0 p-0 toup">
+              Nos enorgullece mostrar los sabores vibrantes y auténticos de los
+              ingredientes latinoamericanos. Es nuestra forma de rendir homenaje
+              a nuestra rica herencia hispana. Nuestros productos son un viaje
+              culinario a través de los sabores diversos y deliciosos de América
+              Latina.
+            </p>
+          </article>
+          <div class="col-md-2"></div>
+          <article class="col-12 col-md-5 p-0 m-0 box_shadow toleft">
+            <img
+              src="./ASSETS/img/TresLechesCake.jpg"
+              alt="Three Milk Cake"
+              class="img-fluid rounded-2"
+            />
+          </article>
+        </div>
+        <div class="row m-0 p-0">
+          <article
+            class="col-12 col-md-5 p-0 m-0 box_shadow order-3 order-md-1 toright"
+          >
+            <img
+              src="./ASSETS/img/RedVelvetCake.jpg"
+              alt="Three Milk Cake"
+              class="img-fluid rounded-2"
+            />
+          </article>
+          <div class="col-md-2 order-2"></div>
+          <article class="col-12 col-md-5 p-0 m-0 order-1 order-md-3 toleft">
+            <h3
+              class="border-2 border-bottom border-white text-white versalita"
+            >
+              Explorando Sabores
+            </h3>
+            <h5 class="m-0 p-0 py-2 toup">Un mundo de Opciones</h5>
+            <p class="m-0 p-0 toup">
+              Ofrecemos una amplia variedad de sabores para satisfacer tu
+              paladar. Desde pasteles de tres leches hasta pasteles de pan de
+              mantequilla de vainilla, marmoleados de chocovanilla, Red Velvet,
+              zanahoria y especias, pan de chocolate, pan de naranja y piña.
+            </p>
+          </article>
+        </div>
+        <article class="mt-5 m-0 p-0 d-flex flex-column align-items-end toleft">
+          <h3
+            class="m-0 p-0 border-2 border-bottom border-white text-white pb-2 w-75 versalita"
+          >
+            Rellenos Irresistibles
+          </h3>
+          <h5 class="m-0 p-0 w-75 py-3 toleft">The Sweet Touch</h5>
+          <p class="m-0 p-0 w-75 toleft">
+            Nuestros pasteles no serían lo mismo sin nuestros rellenos, que
+            incluyen dulce de leche 'La Lechera', caramelo casero, caramelo
+            salado, crema con fresas frescas, durazno, piña en fruta fresca,
+            mocha con caramelo, nueces, crema pastelera, Nutella, mousse de
+            maracuyá, brigadeiro de chocolate blanco, brigadeiro de chocolate
+            semiamargo, crema de queso y crema de pistacho.
+          </p>
+        </article>
+        <article class="mt-5 m-0 p-0 d-flex flex-column toup">
+          <h3
+            class="m-0 p-0 w-100 text-white border-2 border-bottom border-white pb-2 versalita"
+          >
+            More Than Cakes
+          </h3>
+          <div class="desssert-table_img mt-4 rounded-2 box_shadow toup">
+            <h4
+              class="m-0 p-0 pt-3 text-white fw-bold border-1 border-bottom border-white mx-4 versalita revealSlow"
+            >
+              Creando Dulces Momentos
+            </h4>
+            <p class="d-none d-md-block m-0 p-4 w-100 revealExtraSlow">
+              Nuestra dedicación se extiende mucho más allá del arte de la
+              repostería, ya que nos enorgullece enormemente nuestra capacidad
+              para crear mesas de postres verdaderamente cautivadoras,
+              cuidadosamente diseñadas para realzar una amplia variedad de
+              eventos, desde la elegancia de las bodas y las queridas
+              tradiciones de las quinceañeras hasta el encanto único de
+              reuniones y celebraciones especiales.
+            </p>
+            <p class="d-block d-md-none m-0 p-4 w-100 revealExtraSlow">
+              Nuestro compromiso va más allá de la repostería. Diseñamos
+              hermosas mesas de postres para todo tipo de eventos, desde bodas y
+              quinceañeras hasta fiestas especiales.
+            </p>
+            <div
+              class="d-flex align-items-center justify-content-between mx-4 flex-wrap gap-3 revealExtraSlow"
+            >
+              <h5 class="fs-6 versalita m-0 p-0 text-white">
+                El toque dulce perfecto para tu ocasión especial. Explora
+                nuestras opciones de mesas de postres.
+              </h5>
+              <a href="#contact-us"
+                ><button
+                  class="btn btn-outline-dark fw-bold rounded-pill versalita"
+                >
+                  ¡Solicita un Presupuesto HOY!
+                </button></a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="mt-5 toup">
+          <h3
+            class="m-0 p-0 w-100 text-white border-2 border-bottom border-white pb-2 versalita"
+          >
+            Un Mundo de Delicias
+          </h3>
+          <h4 class="py-3 m-0 p0 toup">Our Variety</h4>
+          <p class="toup">
+            Nuestra variedad de productos incluye mini brownies, flanes para
+            niños, cake pops, cupcakes, galletas personalizadas, mini pasteles,
+            alfajores con dulce de leche, alfajores de Nutella, alfajores de
+            nuez y vasitos de cheesecake con sabores como maracuyá, frutos rojos
+            (mora, frambuesa y arándanos) y limón.
+          </p>
+        </article>
+        <article
+          class="position-relative varietyCakes_section w-100 text-center my-5 pt-5"
+        >
+          <div class="a toright"></div>
+          <div class="b todown2"></div>
+          <div class="c toright"></div>
+          <div class="d toup"></div>
+          <div class="e toleft"></div>
+
+          <div
+            class="position-absolute d-flex align-items-center justify-content-center w-100 top-50 start-50 translate-middle blur-bg fullScreen py-3"
+          >
+            <h5
+              class="fw-bold text-white fs-4 text-white m-0 p-0 w-75 revealExtraSlow"
+            >
+              En <strong class="fs-3 notranslate">Milys Sweet</strong>,
+              combinamos pasión y calidad para crear experiencias dulces y
+              memorables. Esperamos que nos elijas para endulzar tus momentos
+              especiales.
+            </h5>
+          </div>
+        </article>
+      </section>
+      <!-- End About us Section -->
+      <!-- Start Cakes Section-->
+      <section class="container mt-5 pt-5 toleft" id="cakes">
+        <h2 class="text-white display-3 border-2 border-white border-bottom">
+          Nuestros Deliciosos <strong>Pasteles</strong>
+        </h2>
+        <h3 class="pt-2 toleft">
+          Creaciones Personalizadas y Clásicos Irresistibles
+        </h3>
+        <p class="fs-5 toleft">
+          En Milys Sweet, nuestra sección de pasteles es el corazón de lo que
+          hacemos. Ofrecemos una amplia variedad de opciones para satisfacer
+          todos tus antojos.
+        </p>
+        <article class="row d-flex mt-5 pt-5 toright">
+          <div class="col-12 col-md-4">
+            <h3
+              class="text-white fw-bold border-2 border-white border-bottom versalita"
+            >
+              Pasteles Personalizados
+            </h3>
+            <h4 class="p-0 m-0 pt-2 toright">Tu Deseo es Nuestra Orden</h4>
+            <p class="p-0 m-0 lh-sm toright">
+              ¿Tienes en mente una idea especial para un pastel? ¡Estamos aquí
+              para hacerla realidad! En Milys Sweet, creamos pasteles
+              personalizados diseñados para encajar perfectamente en la ocasión
+              que estás celebrando. Ya sea un cumpleaños, un bautismo, una boda
+              o cualquier evento especial, trabajaremos contigo para dar vida a
+              tu visión.
+            </p>
+          </div>
+          <div class="col-12 col-md-4 revealExtraSlow">
+            <img
+              src="./ASSETS/img/CustomCake_3.png"
+              alt="cake"
+              class="w-100 img-fluid drop-shadow"
+            />
+          </div>
+          <div
+            class="col-12 col-md-4 d-flex flex-column justify-content-end toleft"
+          >
+            <h4
+              class="text-white fw-bold p-0 m-0 pt-2 border-2 border-white border-bottom mb-3 text-end versalita"
+            >
+              Creando Magia en Azúcar y Harina
+            </h4>
+            <p class="p-0 m-0 lh-sm text-end toleft">
+              En Milys Sweet, cada pastel personalizado es una obra maestra de
+              azúcar y harina. Nuestro talentoso equipo de pasteleros combina su
+              experiencia y creatividad para dar vida a tu visión de la manera
+              más deliciosa posible. Desde el diseño y los sabores hasta los
+              detalles más pequeños de la decoración, cada pastel es un
+              testimonio de nuestro compromiso con la calidad y la satisfacción
+              del cliente. Permítenos convertir tus sueños de repostería en un
+              sabor inolvidable.
+            </p>
+          </div>
+        </article>
+        <article class="mt-5 pt-5">
+          <div class="d-flex flex-column align-items-end toup">
+            <h3
+              class="text-white fw-bold border-2 border-white border-bottom mb-3 col-10 versalita"
+            >
+              Calidad en Cada Bocado
+            </h3>
+            <p class="p-0 m-0 lh-sm col-10 toup">
+              En Milys Sweet, la calidad es nuestra prioridad. Utilizamos
+              ingredientes frescos y auténticos en cada pastel que horneamos.
+              Desde los rellenos suaves y deliciosos hasta la decoración
+              meticulosa, cada detalle se elabora con amor y atención.
+            </p>
+
+            <div class="col-10 d-flex align-items-center">
+              <div class="d-flex flex-column gap-5 toup">
+                <h4 class="p-0 m-0 pt-3 text-white">Place Your Order Today.</h4>
+                <p class="p-0 m-0 lh-sm toup">
+                  Ya sea que estés buscando un pastel personalizado para una
+                  ocasión especial o simplemente quieras disfrutar de un clásico
+                  irresistible, Milys Sweet tiene la solución para satisfacer
+                  tus antojos. ¡Realiza tu pedido hoy y permítenos endulzar tus
+                  momentos más dulces!
+                </p>
+                <a href="#contact-us" class="w-100 toup"
+                  ><button
+                    class="btn btn-outline-light rounded-pill fw-bold w-100 versalita"
+                  >
+                    Ordene Aquí!
+                  </button></a
+                >
+              </div>
+              <img
+                src="./ASSETS/img/CustomCake_4.png"
+                class="w-25 drop-shadow revealExtraSlow"
+                alt=""
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- End Cakes Section -->
+      <!-- Start Cupcakes Section -->
+      <section class="container mt-5 pt-5" id="cupcakes">
+        <h2 class="text-white display-4 border-2 border-white border-bottom">
+          Cupcakes que Encantan
+        </h2>
+        <div class="row m-0 p-0 mt-5">
+          <article class="col-12 col-md-6 position-relative bg_cupcake-pinkBG">
+            <div class="position-absolute p-3">
+              <h3
+                class="text-white border-2 border-white border-bottom versalita"
+              >
+                Discover a World of Flavors
+              </h3>
+              <p class="text-white">
+                Sumérgete en un delicioso viaje de sabores con nuestros
+                exquisitos cupcakes. Desde los favoritos clásicos como el rico
+                chocolate y la suave vainilla hasta creaciones únicas como el
+                vivaz limón y el celestial red velvet, nuestros cupcakes son una
+                sinfonía de sabor y calidad.
+              </p>
+            </div>
+          </article>
+          <article
+            class="col-12 mt-2 m-md-0 col-md-6 position-relative bg_cupcake-lateral"
+          >
+            <div class="position-absolute p-3">
+              <h3
+                class="text-white border-2 border-white border-bottom versalita"
+              >
+                Creaciones Personalizadas para Cada Ocasión
+              </h3>
+              <p class="text-white">
+                Realza tus momentos especiales con nuestros cupcakes
+                personalizados. Ya sea un cumpleaños, una boda o cualquier
+                celebración, nuestros expertos pasteleros pueden elaborar
+                cupcakes a medida que se ajusten al tema y estilo de tu evento.
+                Libera tu creatividad, y nosotros la plasmaremos en cada dulce
+                bocado.
+              </p>
+            </div>
+          </article>
+          <article
+            class="col-12 mt-2 m-md-0 position-relative bg_cupcake-primerPlano"
+          >
+            <div class="position-absolute p-3">
+              <h3
+                class="text-white border-2 border-white border-bottom versalita"
+              >
+                Irresistible Atractivo Visual
+              </h3>
+              <p class="text-white">
+                Nuestros cupcakes no solo son un deleite para tu paladar, sino
+                también un festín para tus ojos. Adornados con arte comestible,
+                nuestros cupcakes presentan colores vibrantes, diseños
+                intrincados y un toque de tu personalidad. Cada cupcake es una
+                obra de arte deliciosa. Eleva tus momentos especiales con
+                nuestros cupcakes personalizados. cupcakes.
+                <span class="d-none d-md-block"
+                  >Ya sea un cumpleaños, una boda o cualquier celebración,
+                  nuestros expertos pasteleros pueden elaborar cupcakes
+                  personalizados que se ajusten al tema y estilo de tu evento.
+                  Libera tu creatividad y nosotros la plasmaremos en cada dulce
+                  bocado.</span
+                >
+              </p>
+            </div>
+          </article>
+        </div>
+        <article class="d-flex flex-column align-items-end mt-5 pt-3 gap-2">
+          <h4 class="col-10 text-white border-2 border-bottom border-white">
+            Realiza tu pedido
+          </h4>
+          <div
+            class="col-12 col-md-10 d-flex flex-wrap align-items-center justify-content-center justify-content-md-between"
+          >
+            <p class="w-75">
+              ¿Listo para saborear la magia de nuestros cupcakes? Haz tu pedido
+              hoy y descubre la mezcla perfecta de sabor, creatividad y calidad
+              en cada bocado
+            </p>
+            <a href="#contact-us">
+              <button
+                type="button"
+                class="btn btn-outline-light rounded-pill fw-bold versalita"
+              >
+                Ordene Aquí
+              </button>
+            </a>
+          </div>
+        </article>
+      </section>
+      <!-- End Cupcakes Section -->
+      <!-- <section class="vh-100" id="sweet-table">
+        <h2>Sweet Table</h2>
+      </section> -->
+      <section class="container mt-5 pt-5" id="contact-us">
+        <h3 class="display-4 text-white border-2 border-bottom border-white">
+          Contáctenos y envíe su orden aquí
+        </h3>
+        <form action="https://formsubmit.co/#" method="POST" class="my-5">
+          <div class="mb-3 d-flex gap-3">
+            <input
+              type="text"
+              name="text"
+              id="textInput"
+              class="form-control"
+              placeholder="Nombre"
+              value=""
+            />
+            <input
+              type="text"
+              name="text"
+              id="textInput"
+              class="form-control"
+              placeholder="Apellido"
+              value=""
+            />
+          </div>
+          <div class="mb-3 d-flex gap-3">
+            <input
+              type="number"
+              name="number"
+              id="numberInput"
+              class="form-control"
+              placeholder="Número telefónico"
+              value=""
+            />
+            <input
+              type="email"
+              name="email"
+              id="emailInput"
+              class="form-control"
+              placeholder="Email"
+              value=""
+            />
+          </div>
+          <div class="mb-3 d-flex gap-3">
+            <input
+              type="text"
+              name="adress"
+              id="Dirección"
+              class="form-control"
+              placeholder="Your Adress"
+              value=""
+            />
+            <input
+              type="text"
+              name="location"
+              id="location"
+              class="form-control"
+              placeholder="Localidad"
+              value=""
+            />
+          </div>
+          <div class="mb-3">
+            <select for="selectService" class="form-select" name="service">
+              <option>Pastel personalizado</option>
+              <option>Pastel clásico</option>
+              <option>Cupcakes</option>
+              <option>Mesa dulce</option>
+            </select>
+            <label for="selectService" class="form-label">
+              Necesito un presupuesto de...</label
+            >
+          </div>
+          <div class="mb-3">
+            <select for="companySize" class="form-select" name="size">
+              <option>1 a 5 comensales</option>
+              <option>6 a 10 comensales</option>
+              <option>11 a 25 comensales</option>
+              <option>26 a 50 comensales</option>
+            </select>
+            <label for="companySize" class="form-label m-0">
+              Cantidad de comensales</label
+            >
+          </div>
+
+          <div class="d-flex align-items-center justify-content-end">
+            <button
+              type="submit"
+              class="btn btn-outline-light rounded-pill versalita fw-bold"
+            >
+              Enviar
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- Start Footer Section -->
+    <footer class="row pt-5 bg-body-tertiary" id="footer">
+      <article
+        class="col-12 col-md-4 px-5 d-flex flex-column align-items-center align-items-md-start justify-content-start mb-5"
+      >
+        <h3 class="text-BauhausLight fw-bold text-shadow notranslate">
+          Milys Sweet
+        </h3>
+        <p
+          class="fw-bold z-3 tm-0 mb-3 gradient-text border-2 border-top border-bottom border-dark py-2"
+        >
+          Pasteles, cupcakes y mesa dulce
+        </p>
+        <div class="d-flex align-items-center gap-5 mx-2 mt-2">
+          <a href="#" target="_blank" referrerpolicy="noreferrer"
+            ><i class="bi bi-facebook text-black fs-3"></i
+          ></a>
+          <a href="#" target="_blank" referrerpolicy="noreferrer"
+            ><i class="bi bi-instagram text-black fs-3"></i
+          ></a>
+          <a href="" target="_blank" referrerpolicy="noreferrer"
+            ><i class="bi bi-whatsapp text-black fs-3"></i
+          ></a>
+          <a href="#" target="_blank" referrerpolicy="noreferrer"
+            ><i class="bi bi-mailbox-flag text-black fs-3"></i
+          ></a>
+        </div>
+      </article>
+
+      <div
+        class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center justify-content-md-start gap-3"
+      >
+        <h5 class="m-0 p-0">Charlotte, Carolina del Norte</h5>
+        <h5>
+          <a
+            href="mailto:#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-dark fs-6 m-0 p-0"
+            >info@milyssweet.com</a
+          >
+        </h5>
+        <h5>
+          <a
+            href="http://#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-dark fs-6 m-0 p-0"
+            >(704) 877-5109</a
+          >
+        </h5>
       </div>
-    </nav>
-    <h1>Sitio en español</h1>
+      <div class="col-12 col-md-4 d-flex justify-content-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417296.448812654!2d-81.16949029799707!3d35.203267903980496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fc4fc381a81%3A0x884650e6bf43d164!2sCharlotte%2C%20Carolina%20del%20Norte%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1698028385358!5m2!1ses!2sar"
+          class="rounded-2 img-fluid"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <article class="col-12 col-md-4"></article>
+      <small
+        class="col-12 d-flex align-items-center justify-content-center flex-wrap mt-3"
+        >&copy;<a
+          href="https://marcelomelogno-webdevelopment.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-copy"
+          ><strong>Marcelo Melogno</strong></a
+        >
+        | Diseño & Desarrollo Web. Octubre 2023
+      </small>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- ******************** -->
+
+    <!-- Bootstrap Scrips -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
