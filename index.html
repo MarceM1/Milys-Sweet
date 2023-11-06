@@ -478,7 +478,7 @@
               </p>
             </div>
           </article>
-          <article class="col-12 col-md-6 position-relative bg_cupcake-lateral">
+          <article class="col-12 mt-2 m-md-0 col-md-6 position-relative bg_cupcake-lateral">
             <div class="position-absolute p-3">
               <h3
                 class="text-white border-2 border-white border-bottom versalita"
@@ -494,7 +494,7 @@
               </p>
             </div>
           </article>
-          <article class="col-12 position-relative bg_cupcake-primerPlano">
+          <article class="col-12 mt-2 m-md-0 position-relative bg_cupcake-primerPlano">
             <div class="position-absolute p-3">
               <h3
                 class="text-white border-2 border-white border-bottom versalita"
@@ -507,10 +507,13 @@
                 feature vibrant colors, intricate designs, and a touch of your
                 personality. Every cupcake is a work of delicious
                 artistry.Elevate your special moments with our personalized
-                cupcakes. <span class="d-none d-md-block">Whether it's a birthday, wedding, or any celebration,
-                  our expert bakers can craft custom cupcakes that match the theme
+                cupcakes.
+                <span class="d-none d-md-block"
+                  >Whether it's a birthday, wedding, or any celebration, our
+                  expert bakers can craft custom cupcakes that match the theme
                   and style of your event. Unleash your creativity, and we'll
-                  bring it to life in every sweet bite.</span>
+                  bring it to life in every sweet bite.</span
+                >
               </p>
             </div>
           </article>
@@ -520,7 +523,7 @@
             Place Your Orde
           </h4>
           <div
-            class="col-12 col-md-10 d-flex align-items-center justify-content-between"
+            class="col-12 col-md-10 d-flex flex-wrap align-items-center justify-content-center justify-content-md-between"
           >
             <p class="w-75">
               Ready to savor the magic of our cupcakes? Place your order today
@@ -542,8 +545,97 @@
       <!-- <section class="vh-100" id="sweet-table">
         <h2>Sweet Table</h2>
       </section> -->
-      <section class="vh-100" id="contact-us">
-        <h2>Contact us Section</h2>
+      <section class="container mt-5 pt-5" id="contact-us">
+        <h3 class="display-4 text-white border-2 border-bottom border-white">Contact us and place your order here</h3>
+        <form
+            action="https://formsubmit.co/#"
+            method="POST"
+             class=" my-5"
+          >
+            <div class="mb-3 d-flex gap-3">
+              <input
+                type="text"
+                name="text"
+                id="textInput"
+                class="form-control"
+                placeholder="First Name"
+                value=""
+              />
+              <input
+                type="text"
+                name="text"
+                id="textInput"
+                class="form-control"
+                placeholder="Last Name"
+                value=""
+              />
+              
+            </div>
+            <div class="mb-3 d-flex gap-3">
+              <input
+                type="number"
+                name="number"
+                id="numberInput"
+                class="form-control"
+                placeholder="Your Phone"
+                value=""
+              />
+              <input
+                type="email"
+                name="email"
+                id="emailInput"
+                class="form-control"
+                placeholder="Email"
+                value=""
+              />
+            </div>
+            <div class="mb-3 d-flex gap-3">
+              <input
+                type="text"
+                name="adress"
+                id="adress"
+                class="form-control"
+                placeholder="Your Adress"
+                value=""
+              />
+              <input
+                type="text"
+                name="location"
+                id="location"
+                class="form-control"
+                placeholder="Your Location"
+                value=""
+              />
+            </div>
+            <div class="mb-3">
+              <select for="selectService" class="form-select" name="service">
+                <option>Custom Cake</option>
+                <option>Classic Cake</option>
+                <option>Cupcakes</option>
+                <option>Dessert Table</option>
+              </select>
+              <label for="selectService" class="form-label">
+                I need a budget of...</label
+              >
+            </div>
+            <div class="mb-3">
+              <select for="companySize" class="form-select" name="size">
+                <option>1 to 5 diners</option>
+                <option>6 to 10 diners</option>
+                <option>11 to 25 diners</option>
+                <option>26 to 50 diners</option>
+              </select>
+              <label for="companySize" class="form-label m-0">
+                Number of invited</label
+              >
+            </div>
+            
+            <div class="d-flex align-items-center justify-content-end">
+              <button type="submit" class="btn btn-outline-light rounded-pill versalita fw-bold">
+                Submit
+              </button>
+            </div>
+          </form>
       </section>
     </main>
     <!-- Start Footer Section -->
