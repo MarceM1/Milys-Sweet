@@ -30,7 +30,7 @@ html {
   min-height: 100vh;
   overflow-x: hidden;
   font-size: 16px;
-  
+
   scroll-behavior: smooth;
   font-family: var(--Montserrat-font) !important;
 }
@@ -97,7 +97,8 @@ main {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9c9c8",endColorstr="#e9c9c8",GradientType=1);
 }
 
-i {
+footer i,
+header i {
   font-weight: bold;
   background-image: linear-gradient(
     120deg,
@@ -251,11 +252,21 @@ footer a:hover {
 }
 
 .desssert-table_img {
-  background-image: url(../ASSETS/img/DessertTable_1.jpg);
+  background-image: url(../ASSETS/img/cake_table-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 83vh;
+}
+
+.bg-glass {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(3px) brightness(0.8);
+  border-bottom: solid 1px #ffffff54;
 }
 
 .box_shadow {
@@ -288,7 +299,7 @@ footer a:hover {
 }
 .b {
   grid-area: b;
-  background-image: url(../ASSETS/img/miniBrownie.jpg);
+  background-image: url(../ASSETS/img/dark_dessert.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -304,7 +315,7 @@ footer a:hover {
 }
 .d {
   grid-area: d;
-  background-image: url(../ASSETS/img/CarrotCake.jpg);
+  background-image: url(../ASSETS/img/white_dessert.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -312,7 +323,7 @@ footer a:hover {
 }
 .e {
   grid-area: e;
-  background-image: url(../ASSETS/img/CheescakeCup_horizontal.jpg);
+  background-image: url(../ASSETS/img/redfruits_dessert.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -330,17 +341,15 @@ footer a:hover {
   background-attachment: fixed;
   background-position: center;
   height: 60vh;
-  
 }
 
 .bg_cupcake-pinkBG {
-  background-image: url(../ASSETS/img/Cupcakes_PinkBG\ \(1\).jpg);
+  background-image: url(../ASSETS/img/Cupcakes_PinkBG\ .jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   height: 60vh;
-  
 }
 .bg_cupcake-primerPlano {
   background-image: url(../ASSETS/img/Cupcake_PrimerPlano.jpg);
@@ -349,7 +358,6 @@ footer a:hover {
   background-attachment: fixed;
   background-position: center;
   height: 60vh;
-  
 }
 
 /* MediaQueries */
