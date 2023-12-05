@@ -28,7 +28,7 @@
           <a
             class="navbar-brand fs-2 text-BauhausLight textWhite_mobile notranslate"
             id="scrollTextColor"
-            href="#"
+            href=""
           >
             <img
               src="./ASSETS/img/logo.png"
@@ -177,7 +177,7 @@
             class="w-75 px-5 z-3 mt-3 d-flex align-items-center justify-content-end justify-content-md-start fullWidth gap-1 gap-md-5 flex-wrap revealExtraSlow"
           >
             <a
-              href="mailto:#"
+              href="#socialmedia"
               target="_blank"
               rel="noopener noreferrer"
               class="fs-6 m-0 p-0 d-flex align-items-center gap-2 justify-content-center fw-bold text-white"
@@ -185,14 +185,14 @@
             ></a>
 
             <a
-              href="mailto:#"
+              href="mailto:dannacamilaesma@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               class="fs-6 m-0 p-0 d-flex align-items-center gap-2 justify-content-center fw-bold text-white"
               >info@milyssweet.com <i class="bi bi-envelope fs-4"></i
             ></a>
             <a
-              href="http://#"
+              href="https://wa.me/17048775109?text=Hola!%20Tengo%20interestes%20en%20tus%20productos..."
               target="_blank"
               rel="noopener noreferrer"
               class="fs-6 m-0 p-0 d-flex align-items-center gap-2 justify-content-center fw-bold text-white"
@@ -649,13 +649,17 @@
         <h3 class="display-4 text-white border-2 border-bottom border-white">
           Cantáctanos y Realiza tu Pedido Aquí
         </h3>
-        <form action="https://formsubmit.co/#" method="POST" class="my-5">
+        <form
+          action="https://formsubmit.io/send/marcelomelogno1986@gmail.com"
+          method="POST"
+          class="my-5"
+        >
           <article class="m-0 p-0 border-1 border-bottom border-white">
             <h4 class="m-0 p-0 text-white mb-2">Datos de Contacto</h4>
             <div class="mb-3 d-flex gap-3">
               <input
                 type="text"
-                name="text"
+                name="Nombre"
                 id="textInput"
                 class="form-control"
                 placeholder="Nombre"
@@ -663,7 +667,7 @@
               />
               <input
                 type="text"
-                name="text"
+                name="Apellido"
                 id="textInput"
                 class="form-control"
                 placeholder="Apellido"
@@ -673,7 +677,7 @@
             <div class="mb-3 d-flex gap-3">
               <input
                 type="number"
-                name="number"
+                name="Número telefónico"
                 id="numberInput"
                 class="form-control"
                 placeholder="Número telefónico"
@@ -691,7 +695,7 @@
             <div class="mb-3 d-flex gap-3">
               <input
                 type="text"
-                name="adress"
+                name="Dirección"
                 id="adress"
                 class="form-control"
                 placeholder="Dirección"
@@ -699,7 +703,7 @@
               />
               <input
                 type="text"
-                name="location"
+                name="Ubicación"
                 id="location"
                 class="form-control"
                 placeholder="Ubicación"
@@ -713,7 +717,7 @@
             <h4 class="p-0 text-white">Arma tu Momento Dulce</h4>
             <div class="row mb-2">
               <div class="col-12 col-md-6">
-                <select for="selectService" class="form-select" name="service">
+                <select for="selectService" class="form-select" name="Evento">
                   <option>...</option>
                   <option>Boda</option>
                   <option>Fiesta de Cumpleaños</option>
@@ -725,7 +729,7 @@
                 >
               </div>
               <div class="col-12 col-md-6">
-                <select for="selectService" class="form-select" name="service">
+                <select for="selectService" class="form-select" name="Servicio">
                   <option>...</option>
                   <option>Pastel Personalizado</option>
                   <option>Pastel Clásico</option>
@@ -739,7 +743,7 @@
             </div>
             <div class="row mb-2">
               <div class="col-12 col-md-6">
-                <select for="companySize" class="form-select" name="size">
+                <select for="companySize" class="form-select" name="Comensales">
                   <option>6 a 10 comensales</option>
                   <option>11 a 25 comensales</option>
                   <option>26 a 50 comensales</option>
@@ -750,7 +754,7 @@
                 >
               </div>
               <div class="col-12 col-md-6">
-                <select for="companySize" class="form-select" name="size">
+                <select for="companySize" class="form-select" name="Pisos">
                   <option>1 Piso</option>
                   <option>2 Pisos</option>
                   <option>3 Pisos</option>
@@ -765,7 +769,7 @@
             <h5 class="mt-4 text-white">Pasteles Personalizados</h5>
             <div class="row">
               <div class="col-6 col-md-3">
-                <select for="companySize" class="form-select" name="size">
+                <select for="companySize" class="form-select" name="Diseño">
                   <option>Tengo una imagen o diseño en mente</option>
                   <option value="">
                     No tengo una imagene o diseño en mente
@@ -776,13 +780,18 @@
                 >
               </div>
               <div class="col-6 col-md-3">
-                <input class="form-control" type="file" id="formFile" />
+                <input
+                  class="form-control"
+                  type="file"
+                  id="formFile"
+                  name="archivo"
+                />
                 <label for="companySize" class="form-label m-0"
                   >Envia tu Imagen o Diseño</label
                 >
               </div>
               <div class="col-12 col-md-6">
-                <select for="companySize" class="form-select" name="size">
+                <select for="companySize" class="form-select" name="Relleno">
                   <option>Dulce de Leche</option>
                   <option>Caramelo Casero</option>
                   <option>Cremas</option>
@@ -806,7 +815,12 @@
             <h4 class="p-0 text-white">Cuando precisas tus productos?</h4>
             <div class="row">
               <div class="col-12 col-md-6">
-                <input type="date" name="date" id="" class="form-control" />
+                <input
+                  type="date"
+                  name="Fecha del Evento"
+                  id=""
+                  class="form-control"
+                />
                 <label for="date" class="form-label"> Fecha Aproximada </label>
               </div>
               <div class="col-12 col-md-6">
@@ -821,6 +835,7 @@
                       type="checkbox"
                       value=""
                       id="flexCheckDefault"
+                      name="Retira"
                     />
                     <label class="form-check-label" for="flexCheckDefault">
                       Retira
@@ -832,6 +847,7 @@
                       type="checkbox"
                       value=""
                       id="flexCheckDefault"
+                      name="Domicilio"
                     />
                     <label class="form-check-label" for="flexCheckDefault">
                       Entrega a Domicilio
@@ -865,17 +881,26 @@
         >
           Pasteles, cupcakes y mesas dulces
         </p>
-        <div class="d-flex align-items-center gap-5 mx-2 mt-2">
+        <div class="d-flex align-items-center gap-5 mx-2 mt-2" id="socialmedia">
           <a href="#" target="_blank" referrerpolicy="noreferrer"
             ><i class="bi bi-facebook text-black fs-3"></i
           ></a>
-          <a href="#" target="_blank" referrerpolicy="noreferrer"
+          <a
+            href="https://www.instagram.com/milyssweet/?hl=es-la"
+            target="_blank"
+            referrerpolicy="noreferrer"
             ><i class="bi bi-instagram text-black fs-3"></i
           ></a>
-          <a href="" target="_blank" referrerpolicy="noreferrer"
+          <a
+            href="https://wa.me/17048775109?text=Hola!%20Tengo%20interestes%20en%20tus%20productos..."
+            target="_blank"
+            referrerpolicy="noreferrer"
             ><i class="bi bi-whatsapp text-black fs-3"></i
           ></a>
-          <a href="#" target="_blank" referrerpolicy="noreferrer"
+          <a
+            href="mailto:dannacamilaesma@gmail.com"
+            target="_blank"
+            referrerpolicy="noreferrer"
             ><i class="bi bi-mailbox-flag text-black fs-3"></i
           ></a>
         </div>
@@ -887,7 +912,7 @@
         <h5 class="m-0 p-0">Charlotte, Carolina del Norte</h5>
         <h5>
           <a
-            href="mailto:#"
+            href="mailto:dannacamilaesma@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             class="text-dark fs-6 m-0 p-0"
@@ -896,7 +921,7 @@
         </h5>
         <h5>
           <a
-            href="http://#"
+            href="https://wa.me/17048775109?text=Hola!%20Tengo%20interestes%20en%20tus%20productos..."
             target="_blank"
             rel="noopener noreferrer"
             class="text-dark fs-6 m-0 p-0"
